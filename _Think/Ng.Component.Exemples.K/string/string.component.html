@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-title>{{ formId }}</mat-card-title>
+  <k-form [formId]="formId">
+
+    <k-form-field-input 
+      [ctrlName]="'String'" 
+      [label]="'String'" 
+      [value]="'Tadaaaaa !!!'">
+    </k-form-field-input>
+
+    <p>Votre phrase comprend : {{ this.countWord(string)  }} mots.</p>
+    <p>Phrase à l'envers : {{ this.reverseSentence(string) }}</p>
+  </k-form>
+</mat-card>

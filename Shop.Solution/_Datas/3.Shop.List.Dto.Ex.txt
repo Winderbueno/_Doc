@@ -1,0 +1,89 @@
+{
+	shoppingLists : {
+		"shoppingListId": 1,
+		"name": "SL1",
+		"description": "J'espère avancer un jour ;)",
+		"active": true,
+	},
+	items :
+		"1" : {
+			"Id": 1,
+			"categoryId": 1,
+			"order":1,
+			"name": "Nutella",
+			"bought": true,
+			"quantity": 1,
+		},
+		"2" : {
+			"Id": 2,
+			"categoryId": 1,
+			"order":2,
+			"name": "Confiture",
+			"bought": true,
+			"quantity": 1,
+		},
+    treeNodes : 	
+		"1" : {
+			"treeNodeId": 1,
+			"level": 1,
+			"parentId": 0,
+		},
+		"2" : {
+			"treeNodeId": 2,
+			"level": 1,
+			"parentId": 0,
+		},
+		"3" : {
+			"treeNodeId": 3,
+			"level": 1,
+			"parentId": 0,
+		},
+		"4" : {
+			"treeNodeId": 4,
+			"level": 1,
+			"parentId": 0,
+		},
+		"5" : {
+			"treeNodeId": 5,
+			"level": 2,
+			"parentId": 2,
+		},
+		"6" : {
+			"treeNodeId": 6,
+			"level": 2,
+			"parentId": 2,
+		},
+    },
+	categories : 	
+		"1" : {
+			"categoryId": 1,
+			"nodeId": 1,
+			"name": "Exceptionnel",
+		},
+		"2" : {
+			"categoryId": 2,
+			"nodeId": 2,
+			"name": "Repas",
+		},
+		"3" : {
+			"categoryId": 3,
+			"nodeId": 0,
+			"name": "Apero",
+		},
+		"4" : {
+			"categoryId": 4,
+			"nodeId": 0,
+			"name": "Apero",
+		},
+		"5" : {
+			"categoryId": 5,
+			"nodeId": 2,
+			"name": "Matin",
+		},
+		"6" : {
+			"categoryId": 6,
+			"nodeId": 2,
+			"name": "Sandwish",
+		},
+    },
+}

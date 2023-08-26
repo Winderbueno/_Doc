@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-title>{{ formId }}</mat-card-title>
+  <k-form [formId]="formId">
+
+    <!-- TJ -->
+    <k-form-field-input [ctrlName]="'TJ'" [label]="'TJ'" [value]="'400'">
+    </k-form-field-input>
+
+    <!-- CA -->
+    <k-form-field-input [ctrlName]="'CA'" [label]="'CA'">
+    </k-form-field-input>
+
+    <!-- Acre -->
+    <k-form-field-slide-toggle [ctrlName]="'Acre'" [label]="'Acre'" [required]="false">
+    </k-form-field-slide-toggle>
+
+    <!-- Versement Liberatoire -->
+    <k-form-field-slide-toggle [ctrlName]="'VersementLiberatoire'" [label]="'Versement Libératoire'"
+      [required]="false">
+    </k-form-field-slide-toggle>
+
+  </k-form>
+</mat-card>

@@ -1,0 +1,25 @@
+<mat-card-title>Income Tax</mat-card-title>
+
+<table mat-table [dataSource]="dataSource">
+
+  <!-- Income range -->
+  <ng-container matColumnDef="range">
+    <th mat-header-cell *matHeaderCellDef> Range </th>
+    <td mat-cell *matCellDef="let element"> {{element.range}} </td>
+  </ng-container>
+
+  <!-- Tax rate -->
+  <ng-container matColumnDef="rate">
+    <th mat-header-cell *matHeaderCellDef> Rate </th>
+    <td class='center' mat-cell *matCellDef="let element"> {{element.rate}} </td>
+  </ng-container>
+
+  <!-- Tax amount -->
+  <ng-container matColumnDef="amount">
+    <th mat-header-cell *matHeaderCellDef> Amount </th>
+    <td class='center' mat-cell *matCellDef="let element"> {{element.amount}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
